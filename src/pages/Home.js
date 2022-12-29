@@ -1,6 +1,13 @@
+import './Home.css';
+
 function Home() {
   return (
-    <h1>Hello, my portfolio</h1>
+    <main className="Home-main-container">
+      <div className="Home-content-container">
+      <h1>Hello, my portfolio</h1>
+
+      </div>
+    </main>
   )
 }
 

@@ -1,0 +1,11 @@
+.Home-main-container {
+  background-color: var(--russian-violet-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+.Home-content-container {
+  border: 1px solid #edd3c4;
+  height: 40%;
+  width: 60%;
+}
