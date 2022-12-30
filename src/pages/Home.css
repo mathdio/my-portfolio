@@ -1,11 +1,73 @@
 .Home-main-container {
+  align-items: center;
   background-color: var(--russian-violet-color);
+  color: var(--champgane-pink-color);
+  display: flex;
+  gap: 20px;
   height: 100vh;
+  justify-content: center;
   width: 100vw;
 }
 
 .Home-content-container {
-  border: 1px solid #edd3c4;
+  align-items: center;
+  border: red solid 1px;
+  display: flex;
+  flex-direction: column;
   height: 40%;
-  width: 60%;
+  justify-content: center;
+  width: 20%;
+}
+
+.Home-name-title {
+  /* border: red solid 1px;   */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.Home-division-hr {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid var(--ocean-blue-color);
+  margin-top: 10px;
+  width: 270px;
+}
+
+.Home-links-container {
+  /* border: red solid 1px; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+  width: 280px;
+}
+
+.Home-about:hover {
+  cursor: pointer;
+}
+
+.Home-info-container {
+  border: red solid 1px;
+  align-items: center;
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  width: 33%;
+}
+
+.Home-about-container {
+  background-color: red;
+  height: 200px;
+  opacity: 0;
+  transition: 4s;
+  width: 200px;
+}
+
+.Home-showing-container {
+  opacity: 1;
 }
