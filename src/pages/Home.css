@@ -47,6 +47,10 @@
   width: 280px;
 }
 
+.Home-about:hover {
+  cursor: pointer;
+}
+
 .Home-info-container {
   border: red solid 1px;
   align-items: center;
@@ -60,7 +64,7 @@
   background-color: red;
   height: 200px;
   opacity: 0;
-  transition: 0.5s;
+  transition: 4s;
   width: 200px;
 }
 
