@@ -4,7 +4,9 @@ import './Home.css';
 function Home() {
   
   const [aboutInfo, setAboutInfo] = useState(false);
+  const [projectsInfo, setProjectsInfo] = useState(false);
   const [aboutClasses, setAboutClasses] = useState('Home-about-container');
+  const [projectsClasses, setProjectsClasses] = useState('Home-project-container');
   
   useEffect(() => {
     document.title = 'Matheus Diógenes - Full Stack Web Dev';
@@ -18,8 +20,22 @@ function Home() {
     }
   }, [aboutInfo]);
 
+  useEffect(() => {
+    if (projectsInfo) {
+      setProjectsClasses('Home-project-container Home-showing-container')
+    } else {
+      setProjectsClasses('Home-project-container');
+    }
+  }, [projectsInfo]);
+
   const handleAbout = (bool) => {
     setAboutInfo(bool);
+    setProjectsInfo(false);
+  }
+
+  const handleProjects = (bool) => {
+    setProjectsInfo(bool);
+    setAboutInfo(false);
   }
 
   return (
@@ -38,11 +54,17 @@ function Home() {
           >
             About
           </div>
-          <div className="Home-projects">Projects</div>
+          <div 
+            className="Home-projects"
+            onClick={ () => handleProjects(!projectsInfo) }
+          >
+            Projects
+          </div>
         </div>
       </div>
       <div className="Home-info-container">
         <div className={ aboutClasses }></div>
+        <div className={ projectsClasses }></div>
       </div>
     </main>
   )
