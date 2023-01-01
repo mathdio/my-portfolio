@@ -42,9 +42,7 @@ function Home() {
     <main className="Home-main-container">
       <div className="Home-content-container">
         <div className="Home-name-title">
-          <h1>
-            Matheus Diógenes
-          </h1>
+          Matheus Diógenes
         </div>
         <hr className="Home-division-hr" />
         <div className="Home-links-container">
@@ -64,7 +62,9 @@ function Home() {
       </div>
       <div className="Home-info-container">
         <div className={ aboutClasses }></div>
-        <div className={ projectsClasses }></div>
+        <div className={ projectsClasses }>
+          <div>Recipes App Application</div>
+        </div>
       </div>
     </main>
   )
