@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Home.css';
+import { AiFillGithub } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Home() {
   
@@ -63,7 +65,15 @@ function Home() {
       <div className="Home-info-container">
         <div className={ aboutClasses }></div>
         <div className={ projectsClasses }>
-          <div>Recipes App Application</div>
+          <div>
+            <p className="Home-project-name">
+              Recipes App Application
+              {' '}
+              <Link to="https://github.com/mathdio/recipes-app-project">
+               <AiFillGithub />
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </main>
