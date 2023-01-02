@@ -59,13 +59,35 @@
   width: 33%;
 }
 
-.Home-project-name {
-  border: solid red 1px;
-  font-size: 24px;
+.Home-individual-project-container {
+  align-items: center;
+  border: 1px solid var(--champgane-pink-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
-..Home-project-name a {
-  text-decoration: none;
+.Home-project-name {
+  font-size: 20px;
+}
+
+.Home-icons-project-container {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.Home-icons-project-container a {
+  height: 40px;
+  width: 40px;
+}
+
+.Home-icon-project {
+  width: 40px;
 }
 
 .Home-about-container {
