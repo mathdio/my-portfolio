@@ -4,6 +4,7 @@ import githubIcon from '../images/githubIcon.svg';
 import websiteIcon from '../images/websiteIcon.svg';
 import linkedinIcon from '../images/linkedinIcon.svg';
 import projects from '../db/projects';
+import uuid from 'react-uuid';
 
 function Home() {
   
@@ -69,14 +70,14 @@ function Home() {
             <img
               alt=""
               src={ githubIcon }
-              className="Home-icon-project"
+              className="Home-contact-icon"
             />
           </a>
           <a href="https://www.linkedin.com/in/matheus-diogenes-almeida/" target="_blank" rel="noreferrer">
             <img
               alt=""
               src={ linkedinIcon }
-              className="Home-icon-project"
+              className="Home-contact-icon"
             />
           </a>
         </div>
@@ -87,10 +88,13 @@ function Home() {
         </div>
         <div className={ projectsClasses }>
           {projects.map(({name, github, application}) => (
-            <div className="Home-individual-project-container">
-            <p className="Home-project-name">
-              {name}
-            </p>
+          <div 
+            className="Home-individual-project-container"
+            key={ uuid() }  
+          >
+              <p className="Home-project-name">
+                {name}
+              </p>
             <div className="Home-icons-project-container">
               <a href={ github } target="_blank" rel="noreferrer">
                 <img
