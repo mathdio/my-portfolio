@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import './Home.css';
 import githubIcon from '../images/githubIcon.svg';
 import websiteIcon from '../images/websiteIcon.svg';
+import linkedinIcon from '../images/linkedinIcon.svg';
+import projects from '../db/projects';
 
 function Home() {
   
-  const [aboutInfo, setAboutInfo] = useState(false);
+  const [aboutInfo, setAboutInfo] = useState(true);
   const [projectsInfo, setProjectsInfo] = useState(false);
   const [aboutClasses, setAboutClasses] = useState('Home-about-container');
   const [projectsClasses, setProjectsClasses] = useState('Home-project-container');
@@ -61,23 +63,43 @@ function Home() {
             Projects
           </div>
         </div>
+        <hr className="Home-contact-hr" />
+        <div className="Home-contact-icons">
+          <a href="https://github.com/mathdio" target="_blank" rel="noreferrer">
+            <img
+              alt=""
+              src={ githubIcon }
+              className="Home-icon-project"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/matheus-diogenes-almeida/" target="_blank" rel="noreferrer">
+            <img
+              alt=""
+              src={ linkedinIcon }
+              className="Home-icon-project"
+            />
+          </a>
+        </div>
       </div>
       <div className="Home-info-container">
-        <div className={ aboutClasses }></div>
+        <div className={ aboutClasses }>
+          <p>Biologist switching careers to Information Technology area, focusing in web development full stack. Skills in JavaScript ES6, React.js, React Redux, HTML5, CSS3, Bootstrap, Git & GitHub, Jest, RTL, Docker, MySQL, Node.js and Linux.</p>
+        </div>
         <div className={ projectsClasses }>
-          <div className="Home-individual-project-container">
+          {projects.map(({name, github, application}) => (
+            <div className="Home-individual-project-container">
             <p className="Home-project-name">
-              Recipes App Application
+              {name}
             </p>
             <div className="Home-icons-project-container">
-              <a href="https://github.com/mathdio/recipes-app-project" target="_blank" rel="noreferrer">
+              <a href={ github } target="_blank" rel="noreferrer">
                 <img
                   alt=""
                   src={ githubIcon }
                   className="Home-icon-project"
                 />
               </a>
-              <a href="https://recipes-app-project-orpin.vercel.app" target="_blank" rel="noreferrer">
+              <a href={ application } target="_blank" rel="noreferrer">
                 <img
                   alt=""
                   src={ websiteIcon }
@@ -86,6 +108,7 @@ function Home() {
               </a>
             </div>
           </div>
+          ))}
         </div>
       </div>
     </main>
