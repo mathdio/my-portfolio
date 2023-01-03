@@ -64,7 +64,9 @@ function Home() {
         </div>
       </div>
       <div className="Home-info-container">
-        <div className={ aboutClasses }></div>
+        <div className={ aboutClasses }>
+          <p>Biologist switching careers to Information Technology area, focusing in web development full stack. Skills in JavaScript ES6, React.js, React Redux, HTML5, CSS3, Bootstrap, Git & GitHub, Jest, RTL, Docker, MySQL, Node.js and Linux.</p>
+        </div>
         <div className={ projectsClasses }>
           {projects.map(({name, github, application}) => (
             <div className="Home-individual-project-container">
