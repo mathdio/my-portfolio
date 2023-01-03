@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import './Home.css';
 import githubIcon from '../images/githubIcon.svg';
 import websiteIcon from '../images/websiteIcon.svg';
+import linkedinIcon from '../images/linkedinIcon.svg';
 import projects from '../db/projects';
 
 function Home() {
   
-  const [aboutInfo, setAboutInfo] = useState(false);
+  const [aboutInfo, setAboutInfo] = useState(true);
   const [projectsInfo, setProjectsInfo] = useState(false);
   const [aboutClasses, setAboutClasses] = useState('Home-about-container');
   const [projectsClasses, setProjectsClasses] = useState('Home-project-container');
@@ -61,6 +62,23 @@ function Home() {
           >
             Projects
           </div>
+        </div>
+        <hr className="Home-contact-hr" />
+        <div className="Home-contact-icons">
+          <a href="https://github.com/mathdio" target="_blank" rel="noreferrer">
+            <img
+              alt=""
+              src={ githubIcon }
+              className="Home-icon-project"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/matheus-diogenes-almeida/" target="_blank" rel="noreferrer">
+            <img
+              alt=""
+              src={ linkedinIcon }
+              className="Home-icon-project"
+            />
+          </a>
         </div>
       </div>
       <div className="Home-info-container">
