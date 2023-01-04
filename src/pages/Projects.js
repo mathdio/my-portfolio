@@ -1,6 +1,10 @@
+import Header from "../components/Header";
+
 function Projects() {
 	return (
-		<div>PROJECTS</div>
+		<main className="About-main-container">
+      <Header />
+		</main>
 	)
 }
 
