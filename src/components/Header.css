@@ -229,7 +229,7 @@
     width: 40px;
   }
 
-  /* .Header-about:hover, .Header-projects:hover {
+  .Header-about:hover, .Header-projects:hover {
     cursor: pointer;
-  } */
+  }
 }
