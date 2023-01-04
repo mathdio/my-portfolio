@@ -1,0 +1,239 @@
+@media only screen and (max-width: 600px) {
+  .Header-header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    position: fixed;
+    opacity: 0;
+    transition: 3s;
+    width: 90%;
+  }
+
+  .Header-header-transiotioning {
+    opacity: 1;
+  }
+
+  .Header-name-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .Header-division-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    margin-top: 1vh;
+    width: 70%;
+  }
+
+  .Header-links-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 2vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .Header-links-container a {
+    color: var(--champgane-pink-color);
+    text-decoration: none;
+  }
+
+  .Header-contact-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    width: 35%;
+  }
+
+  .Header-contact-icons {
+    display: flex;
+    gap: 3vw;
+    margin-top: 1vh;
+  }
+
+  .Header-contact-icon {
+    width: 40px;
+  }
+
+  .Header-contact-icons a {
+    height: 40px;
+    width: 40px;
+  }
+
+  .Header-about:hover, .Header-projects:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Header-header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    position: fixed;
+    opacity: 0;
+    transition: 3s;
+    width: 90%;
+  }
+
+  .Header-header-transiotioning {
+    opacity: 1;
+  }
+
+  .Header-name-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.75rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .Header-division-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    margin-top: 1vh;
+    width: 70%;
+  }
+
+  .Header-links-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 2vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .Header-links-container a {
+    color: var(--champgane-pink-color);
+    text-decoration: none;
+  }
+
+  .Header-contact-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    width: 35%;
+  }
+
+  .Header-contact-icons {
+    display: flex;
+    gap: 3vw;
+    margin-top: 1vh;
+  }
+
+  .Header-contact-icon {
+    width: 80px;
+  }
+
+  .Header-contact-icons a {
+    height: 80px;
+    width: 80px;
+  }
+
+  .Header-about:hover, .Header-projects:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Header-header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    position: fixed;
+    opacity: 0;
+    transition: 3s;
+    width: 33%;
+  }
+
+  .Header-header-transiotioning {
+    opacity: 1;
+  }
+
+  .Header-name-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .Header-division-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    margin-top: 1vh;
+    width: 40%;
+  }
+
+  .Header-links-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 2vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .Header-links-container a {
+    color: var(--champgane-pink-color);
+    text-decoration: none;
+  }
+
+  .Header-contact-hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ocean-blue-color);
+    width: 20%;
+  }
+
+  .Header-contact-icons {
+    display: flex;
+    gap: 0.5vw;
+    margin-top: 1vh;
+  }
+
+  .Header-contact-icon {
+    width: 40px;
+  }
+
+  .Header-contact-icons a {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* .Header-about:hover, .Header-projects:hover {
+    cursor: pointer;
+  } */
+}
