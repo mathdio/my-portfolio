@@ -8,7 +8,7 @@ function Header() {
   const [headerClasses, setHeaderClasses] = useState('Header-header-container');
 
   useEffect(() => {
-    setHeaderClasses('Header-header-container Header-header-transiotioning')
+    setHeaderClasses('Header-header-container Header-header-transiotioning');
   }, []);
 
   return (

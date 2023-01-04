@@ -3,9 +3,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 33vh;
     justify-content: center;
-    margin: 5%;
-    position: fixed;
     opacity: 0;
     transition: 3s;
     width: 90%;
@@ -83,9 +82,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 33vh;
     justify-content: center;
-    margin: 5%;
-    position: fixed;
     opacity: 0;
     transition: 3s;
     width: 90%;
@@ -164,8 +162,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5%;
-    position: fixed;
     opacity: 0;
     transition: 3s;
     width: 33%;
