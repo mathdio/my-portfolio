@@ -71,10 +71,6 @@
     height: 40px;
     width: 40px;
   }
-
-  .Header-about:hover, .Header-projects:hover {
-    cursor: pointer;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -150,10 +146,6 @@
     height: 80px;
     width: 80px;
   }
-
-  .Header-about:hover, .Header-projects:hover {
-    cursor: pointer;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,9 +219,5 @@
   .Header-contact-icons a {
     height: 40px;
     width: 40px;
-  }
-
-  .Header-about:hover, .Header-projects:hover {
-    cursor: pointer;
   }
 }
