@@ -1,0 +1,126 @@
+@media only screen and (max-width: 600px) {
+    .Projects-main-container {
+      align-items: center;
+      background-color: var(--russian-violet-color);
+      color: var(--champgane-pink-color);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    .Projects-carousel {
+      border: var(--ocean-blue-color) solid 1px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: 3s;
+      width: 90%;
+    }
+  
+    .Projects-carousel-transitioning {
+      opacity: 1;
+    }
+
+    .Projects-screenshot {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .Projects-icons-container {
+      display: flex;
+      gap: 1vw;
+      justify-content: center;
+      margin-bottom: 10vh;
+      margin-top: 1vh;
+    }
+
+    .Projects-icon-link {
+      display: block;
+      height: 40px;
+      width: 40px;
+    }
+}
+  
+@media only screen and (min-width: 600px) {
+  .Projects-main-container {
+    align-items: center;
+    background-color: var(--russian-violet-color);
+    color: var(--champgane-pink-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .Projects-carousel {
+    border: var(--ocean-blue-color) solid 1px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 3s;
+    width: 90%;
+  }
+
+  .Projects-carousel-transitioning {
+    opacity: 1;
+  }
+
+  .Projects-screenshot {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .Projects-icons-container {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    margin-bottom: 6vh;
+    margin-top: 1vh;
+  }
+
+  .Projects-icon-link {
+    display: block;
+    height: 80px;
+    width: 80px;
+  }
+}
+  
+@media only screen and (min-width: 768px) {
+  .Projects-main-container {
+    align-items: center;
+    background-color: var(--russian-violet-color);
+    color: var(--champgane-pink-color);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .Projects-carousel {
+    border: var(--ocean-blue-color) solid 1px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 3s;
+    width: 33%;
+  }
+
+  .Projects-carousel-transitioning {
+    opacity: 1;
+  }
+
+  .Projects-screenshot {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .Projects-icons-container {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    margin-bottom: 11vh;
+    margin-top: 1vh;
+  }
+
+  .Projects-icon-link {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+}
